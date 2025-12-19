@@ -2,13 +2,13 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloatingInline";
-import HeroLogoBillboardSplit from "@/components/sections/hero/HeroLogoBillboardSplit";
-import SplitAboutCards from "@/components/sections/about/SplitAboutCards";
-import TestimonialCardFifteen from "@/components/sections/testimonial/TestimonialCardFifteen";
-import FaqDouble from "@/components/sections/faq/FaqDouble";
-import ContactText from "@/components/sections/contact/ContactText";
-import FooterSplit from "@/components/sections/footer/FooterSplit";
-import ProductCardFour from "@/components/sections/product/ProductCardFour";
+import HeroLogoBillboardSplit from '@/components/sections/hero/HeroLogoBillboardSplit';
+import SplitAboutCards from '@/components/sections/about/SplitAboutCards';
+import TestimonialCardFifteen from '@/components/sections/testimonial/TestimonialCardFifteen';
+import FaqDouble from '@/components/sections/faq/FaqDouble';
+import ContactText from '@/components/sections/contact/ContactText';
+import FooterSplit from '@/components/sections/footer/FooterSplit';
+import ProductCardFour from '@/components/sections/product/ProductCardFour';
 import { Phone, Mail, Package } from "lucide-react";
 
 export default function LandingPage() {
@@ -277,7 +277,6 @@ export default function LandingPage() {
             { icon: Phone, text: "(555) 123-4567" },
             { icon: Mail, text: "info@artemisdefense.org" }
           ]}
-          footerBackgroundColor="#15ad59"
         />
       </div>
     </ThemeProvider>
