@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloatingInline";
 import HeroLogoBillboardSplit from "@/components/sections/hero/HeroLogoBillboardSplit";
 import SplitAboutCards from "@/components/sections/about/SplitAboutCards";
-import TestimonialCardEight from "@/components/sections/testimonial/TestimonialCardEight";
+import TestimonialCardFifteen from "@/components/sections/testimonial/TestimonialCardFifteen";
 import FaqDouble from "@/components/sections/faq/FaqDouble";
 import ContactText from "@/components/sections/contact/ContactText";
 import FooterSplit from "@/components/sections/footer/FooterSplit";
@@ -82,49 +82,28 @@ export default function LandingPage() {
       </div>
 
       <div id="testimonials" data-section="testimonials">
-        <TestimonialCardEight
-          title="Stories of Justice"
-          description="Hear from those whose lives have been transformed through our legal defense support and advocacy."
-          tag="Testimonials"
-          testimonials={[
+        <TestimonialCardFifteen
+          testimonial="Artemis Defense Fund has been instrumental in my fight for justice. Their team provided expert legal support when I needed it most, and I can't thank them enough for standing by me."
+          rating={5}
+          author="Michael Torres, Exonerated Client"
+          avatars={[
             {
-              id: "1",
-              name: "Michael Torres",
-              role: "Exonerated Client",
-              company: "Defense Fund Supporter",
-              rating: 5,
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140101670-ttp7xdlv.jpg",
-              imageAlt: "Michael Torres"
+              src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140101670-ttp7xdlv.jpg",
+              alt: "Michael Torres"
             },
             {
-              id: "2",
-              name: "Sarah Johnson",
-              role: "Family Advocate",
-              company: "Community Member",
-              rating: 5,
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140151637-4n68pd8r.jpg",
-              imageAlt: "Sarah Johnson"
+              src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140151637-4n68pd8r.jpg",
+              alt: "Sarah Johnson"
             },
             {
-              id: "3",
-              name: "James Williams",
-              role: "Defense Attorney",
-              company: "Legal Partner",
-              rating: 5,
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140152452-p4x3ah4p.jpg",
-              imageAlt: "James Williams"
+              src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140152452-p4x3ah4p.jpg",
+              alt: "James Williams"
             },
             {
-              id: "4",
-              name: "Maria Gonzalez",
-              role: "Rights Advocate",
-              company: "Justice Supporter",
-              rating: 5,
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140153329-bmp1nqc3.jpg",
-              imageAlt: "Maria Gonzalez"
+              src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140153329-bmp1nqc3.jpg",
+              alt: "Maria Gonzalez"
             }
           ]}
-          textboxLayout="default"
           useInvertedBackground="noInvert"
         />
       </div>
@@ -136,7 +115,6 @@ export default function LandingPage() {
               id: "1",
               name: "Artemis Defense T-Shirt",
               price: "$35",
-              variant: "Multiple Colors",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140149342-6xlgfqt3.jpg",
               imageAlt: "Artemis Defense T-Shirt",
               isFavorited: false
@@ -145,7 +123,6 @@ export default function LandingPage() {
               id: "2",
               name: "Justice Hoodie",
               price: "$65",
-              variant: "Grey, Navy, Black",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140101670-ttp7xdlv.jpg",
               imageAlt: "Justice Hoodie",
               isFavorited: false
@@ -154,7 +131,6 @@ export default function LandingPage() {
               id: "3",
               name: "Defense Fund Cap",
               price: "$25",
-              variant: "Embroidered Logo",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140151637-4n68pd8r.jpg",
               imageAlt: "Defense Fund Cap",
               isFavorited: false
@@ -163,7 +139,6 @@ export default function LandingPage() {
               id: "4",
               name: "Rights Advocate Tote",
               price: "$40",
-              variant: "Canvas Material",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140152452-p4x3ah4p.jpg",
               imageAlt: "Rights Advocate Tote",
               isFavorited: false
@@ -172,7 +147,6 @@ export default function LandingPage() {
               id: "5",
               name: "Equal Justice Bracelet",
               price: "$20",
-              variant: "Adjustable Fit",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140153329-bmp1nqc3.jpg",
               imageAlt: "Equal Justice Bracelet",
               isFavorited: false
@@ -181,7 +155,6 @@ export default function LandingPage() {
               id: "6",
               name: "Legal Shield Mug",
               price: "$18",
-              variant: "Ceramic White",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140149342-6xlgfqt3.jpg",
               imageAlt: "Legal Shield Mug",
               isFavorited: false
@@ -190,7 +163,6 @@ export default function LandingPage() {
               id: "7",
               name: "Fair Defense Sweatpants",
               price: "$55",
-              variant: "Black, Charcoal",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140101670-ttp7xdlv.jpg",
               imageAlt: "Fair Defense Sweatpants",
               isFavorited: false
