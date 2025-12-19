@@ -14,7 +14,7 @@ import { Phone, Mail, Package } from "lucide-react";
 export default function LandingPage() {
   return (
     <ThemeProvider
-      defaultButtonVariant="elastic-effect"
+      defaultButtonVariant="text-stagger"
       defaultTextAnimation="reveal-blur"
       borderRadius="rounded"
       contentWidth="medium"
@@ -115,6 +115,7 @@ export default function LandingPage() {
               id: "1",
               name: "Artemis Defense T-Shirt",
               price: "$35",
+              variant: "default",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140149342-6xlgfqt3.jpg",
               imageAlt: "Artemis Defense T-Shirt",
               isFavorited: false
@@ -123,6 +124,7 @@ export default function LandingPage() {
               id: "2",
               name: "Justice Hoodie",
               price: "$65",
+              variant: "default",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140101670-ttp7xdlv.jpg",
               imageAlt: "Justice Hoodie",
               isFavorited: false
@@ -131,6 +133,7 @@ export default function LandingPage() {
               id: "3",
               name: "Defense Fund Cap",
               price: "$25",
+              variant: "default",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140151637-4n68pd8r.jpg",
               imageAlt: "Defense Fund Cap",
               isFavorited: false
@@ -139,6 +142,7 @@ export default function LandingPage() {
               id: "4",
               name: "Rights Advocate Tote",
               price: "$40",
+              variant: "default",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140152452-p4x3ah4p.jpg",
               imageAlt: "Rights Advocate Tote",
               isFavorited: false
@@ -147,6 +151,7 @@ export default function LandingPage() {
               id: "5",
               name: "Equal Justice Bracelet",
               price: "$20",
+              variant: "default",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140153329-bmp1nqc3.jpg",
               imageAlt: "Equal Justice Bracelet",
               isFavorited: false
@@ -155,6 +160,7 @@ export default function LandingPage() {
               id: "6",
               name: "Legal Shield Mug",
               price: "$18",
+              variant: "default",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140149342-6xlgfqt3.jpg",
               imageAlt: "Legal Shield Mug",
               isFavorited: false
@@ -163,6 +169,7 @@ export default function LandingPage() {
               id: "7",
               name: "Fair Defense Sweatpants",
               price: "$55",
+              variant: "default",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140101670-ttp7xdlv.jpg",
               imageAlt: "Fair Defense Sweatpants",
               isFavorited: false
