@@ -4,13 +4,13 @@
   /* Base units */
   /* --vw is set by ThemeProvider */
 
-  --background: #ffffff;;
-  --card: #fcfcfc;;
-  --foreground: #0f0003e6;;
-  --primary-cta: #c1121f;;
-  --secondary-cta: #ffffff;;
-  --accent: #e2e2e2;;
-  --background-accent: #c4c4c4;;
+  --background: #ffffff;
+  --card: #fcfcfc;
+  --foreground: #00120ae6;
+  --primary-cta: #15ad59;
+  --secondary-cta: #ffffff;
+  --accent: #e2e2e2;
+  --background-accent: #c4c4c4;
 
   /* text sizing - set by ThemeProvider */
   /* --text-2xs: clamp(0.465rem, 0.62vw, 0.62rem);
@@ -495,7 +495,7 @@ html {
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: var(--font-outfit), sans-serif;
+  font-family: var(--font-inter-tight), sans-serif;
   position: relative;
   min-height: 100vh;
   overscroll-behavior: none;
@@ -508,5 +508,5 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-outfit), sans-serif;
+  font-family: var(--font-inter-tight), sans-serif;
 }

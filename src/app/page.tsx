@@ -277,6 +277,7 @@ export default function LandingPage() {
             { icon: Phone, text: "(555) 123-4567" },
             { icon: Mail, text: "info@artemisdefense.org" }
           ]}
+          footerBackgroundColor="#15ad59"
         />
       </div>
     </ThemeProvider>
