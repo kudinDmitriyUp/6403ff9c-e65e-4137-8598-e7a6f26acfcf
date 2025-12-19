@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloatingInline";
@@ -8,7 +8,8 @@ import TestimonialCardEight from "@/components/sections/testimonial/TestimonialC
 import FaqDouble from "@/components/sections/faq/FaqDouble";
 import ContactText from "@/components/sections/contact/ContactText";
 import FooterSplit from "@/components/sections/footer/FooterSplit";
-import { Phone, Mail } from "lucide-react";
+import ProductCardFour from "@/components/sections/product/ProductCardFour";
+import { Phone, Mail, Package } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -124,6 +125,85 @@ export default function LandingPage() {
             }
           ]}
           textboxLayout="default"
+          useInvertedBackground="noInvert"
+        />
+      </div>
+
+      <div id="products" data-section="products">
+        <ProductCardFour
+          products={[
+            {
+              id: "1",
+              name: "Artemis Defense T-Shirt",
+              price: "$35",
+              variant: "Multiple Colors",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140149342-6xlgfqt3.jpg",
+              imageAlt: "Artemis Defense T-Shirt",
+              isFavorited: false
+            },
+            {
+              id: "2",
+              name: "Justice Hoodie",
+              price: "$65",
+              variant: "Grey, Navy, Black",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140101670-ttp7xdlv.jpg",
+              imageAlt: "Justice Hoodie",
+              isFavorited: false
+            },
+            {
+              id: "3",
+              name: "Defense Fund Cap",
+              price: "$25",
+              variant: "Embroidered Logo",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140151637-4n68pd8r.jpg",
+              imageAlt: "Defense Fund Cap",
+              isFavorited: false
+            },
+            {
+              id: "4",
+              name: "Rights Advocate Tote",
+              price: "$40",
+              variant: "Canvas Material",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140152452-p4x3ah4p.jpg",
+              imageAlt: "Rights Advocate Tote",
+              isFavorited: false
+            },
+            {
+              id: "5",
+              name: "Equal Justice Bracelet",
+              price: "$20",
+              variant: "Adjustable Fit",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140153329-bmp1nqc3.jpg",
+              imageAlt: "Equal Justice Bracelet",
+              isFavorited: false
+            },
+            {
+              id: "6",
+              name: "Legal Shield Mug",
+              price: "$18",
+              variant: "Ceramic White",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140149342-6xlgfqt3.jpg",
+              imageAlt: "Legal Shield Mug",
+              isFavorited: false
+            },
+            {
+              id: "7",
+              name: "Fair Defense Sweatpants",
+              price: "$55",
+              variant: "Black, Charcoal",
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/gallery/uploaded-1766140101670-ttp7xdlv.jpg",
+              imageAlt: "Fair Defense Sweatpants",
+              isFavorited: false
+            }
+          ]}
+          title="Our Merchandise"
+          description="Support our mission with branded merchandise. Every purchase helps fund legal defense for those in need."
+          tag="Shop"
+          tagIcon={Package}
+          textboxLayout="default"
+          gridVariant="uniform-all-items-equal"
+          animationType="slide-up"
+          containerStyle="default"
           useInvertedBackground="noInvert"
         />
       </div>
